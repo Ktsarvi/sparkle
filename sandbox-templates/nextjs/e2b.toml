@@ -1,0 +1,17 @@
+# This is a config for E2B sandbox template.
+# You can use template ID (luar5ae8r9q6es0s4ddl) or template name (sparkle-ai-nextjs-test-38) to create a sandbox:
+
+# Python SDK
+# from e2b import Sandbox, AsyncSandbox
+# sandbox = Sandbox.create("sparkle-ai-nextjs-test-38") # Sync sandbox
+# sandbox = await AsyncSandbox.create("sparkle-ai-nextjs-test-38") # Async sandbox
+
+# JS SDK
+# import { Sandbox } from 'e2b'
+# const sandbox = await Sandbox.create('sparkle-ai-nextjs-test-38')
+
+team_id = "d9457870-7ba2-4e5a-958a-c32bef441168"
+start_cmd = "/compile_page.sh"
+dockerfile = "e2b.Dockerfile"
+template_name = "sparkle-ai-nextjs-test-38"
+template_id = "luar5ae8r9q6es0s4ddl"
