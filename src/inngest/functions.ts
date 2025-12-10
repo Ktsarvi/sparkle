@@ -172,7 +172,7 @@ export const codeAgentFunction = inngest.createFunction(
     });
 
     await step.run("save-result", async () => {
-      if (!isError) {
+      if (isError) {
         return await prisma.message.create({
           data: {
             projectId: event.data.projectId,
@@ -193,7 +193,7 @@ export const codeAgentFunction = inngest.createFunction(
             create: {
               sandboxUrl: sandboxUrl,
               title: "Fragment",
-              files: result.state.data.files || {}, // might delete "|| {}"
+              files: result.state.data.files || {},
             },
           },
         },

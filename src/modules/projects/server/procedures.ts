@@ -64,7 +64,10 @@ export const projectsRouter = createTRPCRouter({
 
       await inngest.send({
         name: "code-agent/run",
-        data: { value: input.value, projectId: createdProject.id },
+        data: {
+          value: input.value,
+          projectId: createdProject.id,
+        },
       });
 
       return createdProject;
