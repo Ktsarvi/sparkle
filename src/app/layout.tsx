@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sparkle",
   description: "Create an app with just one sentence",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
